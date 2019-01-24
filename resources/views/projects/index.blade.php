@@ -7,10 +7,16 @@
   <body>
     <h1>Projects</h1>
 
-    @foreach ($projects as $project)
+    <ul>
+      @foreach ($projects as $project)
 
-      <li>{{ $project->id }} - {{ $project->title }}</li>
+        <li>
+          <a href="/projects/{{ $project->id }}">
+            {{ $project->title }}
+          </a>
+        </li>
 
-    @endforeach
+      @endforeach
+  </ul>
   </body>
 </html>
