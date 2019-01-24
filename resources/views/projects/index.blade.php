@@ -9,7 +9,7 @@
 
     @foreach ($projects as $project)
 
-      <li>{{ $project->title }}</li>
+      <li>{{ $project->id }} - {{ $project->title }}</li>
 
     @endforeach
   </body>
